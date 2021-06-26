@@ -511,3 +511,12 @@ p {
     transform: rotate(405deg);
   }
 }
+/* Copyright */
+.copyright {
+  align-self:center;
+	display: absolute;
+  bottom: 100%;
+  transform: translateY(100%);
+	color: white;
+	text-align: center;
+}
