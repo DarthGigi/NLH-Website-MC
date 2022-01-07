@@ -761,6 +761,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('/assets/images/pfps/Gigi/GigiBanner.gif');
 }
 
+.bg-\[url\(\'\/assets\/images\/pfps\/Rescore\/RescoreBanner\.jpeg\'\)\] {
+  background-image: url('/assets/images/pfps/Rescore/RescoreBanner.jpeg');
+}
+
 .bg-\[url\(\'\/assets\/images\/pfps\/Titan\/TitanBanner\.png\'\)\] {
   background-image: url('/assets/images/pfps/Titan/TitanBanner.png');
 }
@@ -785,12 +789,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('/assets/images/pfps/Microwave_Helicopter/Microwave_HelicopterBanner.gif');
 }
 
-.bg-\[url\(\'\/assets\/images\/pfps\/Rescore\/RescoreBanner\.png\'\)\] {
-  background-image: url('/assets/images/pfps/Rescore/RescoreBanner.png');
-}
-
-.bg-\[url\(\'\/assets\/images\/pfps\/Rescore\/RescoreBanner\.jpeg\'\)\] {
-  background-image: url('/assets/images/pfps/Rescore/RescoreBanner.jpeg');
+.bg-\[url\(\'\/assets\/images\/pfps\/Microwave_Helicopter\/Microwave_HelicopterBanner\.png\'\)\] {
+  background-image: url('/assets/images/pfps/Microwave_Helicopter/Microwave_HelicopterBanner.png');
 }
 
 .from-\[\#d979d9\] {
