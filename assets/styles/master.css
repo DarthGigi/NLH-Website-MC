@@ -437,6 +437,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 *, ::before, ::after {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
   --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
@@ -489,6 +497,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -499,10 +511,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-10 {
   margin-bottom: 2.5rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
 }
 
 .mt-auto {
@@ -621,6 +629,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-shrink: 0;
 }
 
+@-webkit-keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
 .scroll-m-10 {
   scroll-margin: 2.5rem;
 }
@@ -728,11 +755,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(99 102 241 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -757,6 +779,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\/assets\/images\/Sky\.svg\'\)\] {
+  background-image: url('/assets/images/Sky.svg');
+}
+
 .bg-\[url\(\'\/assets\/images\/pfps\/Gigi\/GigiBanner\.gif\'\)\] {
   background-image: url('/assets/images/pfps/Gigi/GigiBanner.gif');
 }
@@ -773,6 +799,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('/assets/images/pfps/Ketchup/KetchupBanner.jpeg');
 }
 
+.bg-\[url\(\'\/assets\/images\/pfps\/Ponib\/PonibBanner\.jpeg\'\)\] {
+  background-image: url('/assets/images/pfps/Ponib/PonibBanner.jpeg');
+}
+
+.bg-\[url\(\'\/assets\/images\/pfps\/T244\/T244Banner\.gif\'\)\] {
+  background-image: url('/assets/images/pfps/T244/T244Banner.gif');
+}
+
+.bg-\[url\(\'\/assets\/images\/pfps\/Unminn\/UnminnBanner\.jpeg\'\)\] {
+  background-image: url('/assets/images/pfps/Unminn/UnminnBanner.jpeg');
+}
+
+.bg-\[url\(\'\/assets\/images\/pfps\/TheWiseBritish\/TheWiseBritishBanner\.png\'\)\] {
+  background-image: url('/assets/images/pfps/TheWiseBritish/TheWiseBritishBanner.png');
+}
+
 .bg-\[url\(\'\/assets\/images\/pfps\/NiteRix\/NiteRixBanner\.jpeg\'\)\] {
   background-image: url('/assets/images/pfps/NiteRix/NiteRixBanner.jpeg');
 }
@@ -787,10 +829,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[url\(\'\/assets\/images\/pfps\/Microwave_Helicopter\/Microwave_HelicopterBanner\.gif\'\)\] {
   background-image: url('/assets/images/pfps/Microwave_Helicopter/Microwave_HelicopterBanner.gif');
-}
-
-.bg-\[url\(\'\/assets\/images\/pfps\/Microwave_Helicopter\/Microwave_HelicopterBanner\.png\'\)\] {
-  background-image: url('/assets/images/pfps/Microwave_Helicopter/Microwave_HelicopterBanner.png');
 }
 
 .from-\[\#d979d9\] {
@@ -829,16 +867,16 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-position: center;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .px-4 {
@@ -934,6 +972,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -942,11 +985,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl {
@@ -989,6 +1027,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-indigo-100 {
+  --tw-text-opacity: 1;
+  color: rgb(224 231 255 / var(--tw-text-opacity));
+}
+
+.text-indigo-300 {
+  --tw-text-opacity: 1;
+  color: rgb(165 180 252 / var(--tw-text-opacity));
+}
+
 .text-indigo-200 {
   --tw-text-opacity: 1;
   color: rgb(199 210 254 / var(--tw-text-opacity));
@@ -1022,11 +1070,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-indigo-50 {
   --tw-text-opacity: 1;
   color: rgb(238 242 255 / var(--tw-text-opacity));
-}
-
-.text-indigo-300 {
-  --tw-text-opacity: 1;
-  color: rgb(165 180 252 / var(--tw-text-opacity));
 }
 
 .text-indigo-400 {
@@ -1084,6 +1127,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-ring-color: rgb(165 180 252 / var(--tw-ring-opacity));
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition {
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1092,8 +1141,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .duration-100 {
   transition-duration: 100ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover\:bg-indigo-600:hover {
@@ -1152,8 +1209,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     order: 0;
   }
 
-  .sm\:col-start-2 {
-    grid-column-start: 2;
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:h-auto {
@@ -1218,10 +1275,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
-  .md\:col-start-auto {
-    grid-column-start: auto;
-  }
-
   .md\:mb-6 {
     margin-bottom: 1.5rem;
   }
@@ -1264,10 +1317,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-32 {
     width: 8rem;
-  }
-
-  .md\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .md\:grid-cols-3 {
@@ -1355,15 +1404,27 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .md\:hover\:scale-110:hover {
+    --tw-scale-x: 1.1;
+    --tw-scale-y: 1.1;
+    transform: var(--tw-transform);
+  }
+
+  .md\:hover\:scale-105:hover {
+    --tw-scale-x: 1.05;
+    --tw-scale-y: 1.05;
+    transform: var(--tw-transform);
+  }
 }
 
 @media (min-width: 1024px) {
-  .lg\:col-start-1 {
-    grid-column-start: 1;
-  }
-
   .lg\:inline-block {
     display: inline-block;
+  }
+
+  .lg\:inline {
+    display: inline;
   }
 
   .lg\:flex {
@@ -1380,10 +1441,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-3\/5 {
     width: 60%;
-  }
-
-  .lg\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-3 {

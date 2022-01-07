@@ -51,17 +51,17 @@ So what are you waiting for? Join now!">
 
             <!-- nav - start -->
             <nav class="hidden gap-12 lg:flex">
-                <a href="https://nlh.wtf/" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Home</a>
-                <a href="REQs.html" class="text-lg font-semibold text-gray-600">Requirements</a>
-                <a href="FAQ.html" class="text-lg font-semibold text-indigo-500 transition duration-100 hover:text-indigo-500 active:text-indigo-700">FAQ</a>
-                <a href="staff.html" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Staff</a>
+                <a href="https://nlh.wtf/" class="text-lg font-semibold text-gray-600 transition-all duration-300 ease-in-out md:hover:scale-110 hover:text-indigo-500 active:text-indigo-700">Home</a>
+                <a href="REQs.html" class="text-lg font-semibold text-gray-600 transition-all duration-300 ease-in-out md:hover:scale-110 hover:text-indigo-500 active:text-indigo-700">Requirements</a>
+                <a href="FAQ.html" class="text-lg font-semibold text-indigo-500 hover:text-indigo-500 active:text-indigo-700">FAQ</a>
+                <a href="staff.html" class="text-lg font-semibold text-gray-600 transition-all duration-300 ease-in-out md:hover:scale-110 hover:text-indigo-500 active:text-indigo-700">Staff</a>
             </nav>
             <!-- nav - end -->
 
             <!-- buttons - start -->
-            <a href="https://discord.gg/herHCGPcNW" target="_blank" class="hidden px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-indigo-500 rounded-lg outline-none lg:inline-block hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 md:text-base">Join</a>
+            <a href="https://discord.gg/herHCGPcNW" target="_blank" class="hidden px-8 py-3 text-sm font-semibold text-center text-white transition-all duration-300 ease-in-out bg-indigo-500 rounded-lg outline-none md:hover:scale-110 lg:inline-block hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 md:text-base">Join</a>
 
-            <button type="button" class="inline-flex items-center lg:hidden bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
+            <button onclick="mobileNavbar()" type="button" class="inline-flex items-center lg:hidden bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
                 </svg>
@@ -69,6 +69,21 @@ So what are you waiting for? Join now!">
             </button>
             <!-- buttons - end -->
         </header>
+
+        <ul id="mobileNav" class="hidden text-2xl text-center transition duration-100 ease-in-out bg-indigo-500 rounded-lg lg:hidden">
+            <li class="w-full h-full p-2">
+                <a href="https://nlh.wtf/" class="inline-block w-full h-full font-semibold text-indigo-300 transition duration-100 rounded-lg hover:bg-indigo-600">Home</a>
+            </li>
+            <li class="w-full h-full p-2">
+                <a href="REQs.html" class="inline-block w-full h-full font-semibold text-indigo-300 transition duration-100 rounded-lg hover:bg-indigo-600">Requirements</a>
+            </li>
+            <li class="w-full h-full p-2">
+                <a href="FAQ.html" class="inline-block w-full h-full font-semibold text-indigo-100 transition duration-100 rounded-lg hover:bg-indigo-600">FAQ</a>
+            </li>
+            <li class="w-full h-full p-2">
+                <a href="staff.html" class="inline-block w-full h-full font-semibold text-indigo-300 transition duration-100 rounded-lg hover:bg-indigo-600">Staff</a>
+            </li>
+        </ul>
     </div>
 
     <div class="py-6 sm:py-8 lg:py-12">
@@ -83,7 +98,9 @@ So what are you waiting for? Join now!">
 
             <div class="grid gap-8 sm:grid-cols-2 xl:grid-cols-3 sm:gap-y-10">
                 <!-- question - start -->
-                <div class="relative p-5 pt-8 bg-[#282828] rounded-lg">
+                <div class="relative p-5 pt-8 bg-[#282828] rounded-lg transition-all duration-300 ease-in-out md:hover:scale-105">
+                    <span class="absolute inline-flex items-center justify-center w-8 h-8 bg-indigo-500 rounded-full animate-ping text-indigo-50 -top-4 left-4">
+                    </span>
                     <span class="absolute inline-flex items-center justify-center w-8 h-8 bg-indigo-500 rounded-full text-indigo-50 -top-4 left-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
@@ -96,7 +113,9 @@ So what are you waiting for? Join now!">
                 <!-- question - end -->
 
                 <!-- question - start -->
-                <div class="relative p-5 pt-8 bg-[#282828] rounded-lg">
+                <div class="relative p-5 pt-8 bg-[#282828] rounded-lg transition-all duration-300 ease-in-out md:hover:scale-105">
+                    <span class="absolute inline-flex items-center justify-center w-8 h-8 bg-indigo-500 rounded-full animate-ping text-indigo-50 -top-4 left-4">
+                    </span>
                     <span class="absolute inline-flex items-center justify-center w-8 h-8 bg-indigo-500 rounded-full text-indigo-50 -top-4 left-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
@@ -109,7 +128,9 @@ So what are you waiting for? Join now!">
                 <!-- question - end -->
 
                 <!-- question - start -->
-                <div class="relative p-5 pt-8 bg-[#282828] rounded-lg">
+                <div class="relative p-5 pt-8 bg-[#282828] rounded-lg transition-all duration-300 ease-in-out md:hover:scale-105">
+                    <span class="absolute inline-flex items-center justify-center w-8 h-8 bg-indigo-500 rounded-full animate-ping text-indigo-50 -top-4 left-4">
+                    </span>
                     <span class="absolute inline-flex items-center justify-center w-8 h-8 bg-indigo-500 rounded-full text-indigo-50 -top-4 left-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
@@ -167,6 +188,7 @@ So what are you waiting for? Join now!">
         <!-- Footer - end -->
     </div>
 
+    <script src="/assets/scripts/javascript.js" defer></script>
 </body>
 
 </html>

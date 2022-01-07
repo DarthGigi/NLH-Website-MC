@@ -48,17 +48,17 @@
 
             <!-- nav - start -->
             <nav class="hidden gap-12 lg:flex">
-                <a href="https://nlh.wtf/" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Home</a>
-                <a href="REQs.html" class="text-lg font-semibold text-gray-600">Requirements</a>
-                <a href="FAQ.html" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">FAQ</a>
-                <a href="staff.html" class="text-lg font-semibold text-indigo-500 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Staff</a>
+                <a href="https://nlh.wtf/" class="text-lg font-semibold text-gray-600 transition-all duration-300 ease-in-out md:hover:scale-110 lg:inline sm:hidden hover:text-indigo-500 active:text-indigo-700">Home</a>
+                <a href="REQs.html" class="text-lg font-semibold text-gray-600 transition-all duration-300 ease-in-out md:hover:scale-110 lg:inline sm:hidden hover:text-indigo-500 active:text-indigo-700">Requirements</a>
+                <a href="FAQ.html" class="text-lg font-semibold text-gray-600 transition-all duration-300 ease-in-out md:hover:scale-110 lg:inline sm:hidden hover:text-indigo-500 active:text-indigo-700">FAQ</a>
+                <a href="staff.html" class="text-lg font-semibold text-indigo-500 lg:inline sm:hidden hover:text-indigo-500 active:text-indigo-700">Staff</a>
             </nav>
             <!-- nav - end -->
 
             <!-- buttons - start -->
-            <a href="https://discord.gg/herHCGPcNW" target="_blank" class="hidden px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-indigo-500 rounded-lg outline-none lg:inline-block hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 md:text-base">Join</a>
+            <a href="https://discord.gg/herHCGPcNW" target="_blank" class="hidden px-8 py-3 text-sm font-semibold text-center text-white transition-all duration-300 ease-in-out bg-indigo-500 rounded-lg outline-none md:hover:scale-110 lg:inline-block hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 md:text-base">Join</a>
 
-            <button type="button" class="inline-flex items-center lg:hidden bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
+            <button onclick="mobileNavbar()" type="button" class="inline-flex items-center lg:hidden bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
                 </svg>
@@ -66,6 +66,22 @@
             </button>
             <!-- buttons - end -->
         </header>
+
+        <ul id="mobileNav" class="hidden text-2xl text-center transition duration-100 ease-in-out bg-indigo-500 rounded-lg lg:hidden">
+            <li class="w-full h-full p-2">
+                <a href="https://nlh.wtf/" class="inline-block w-full h-full font-semibold text-indigo-300 transition duration-100 rounded-lg hover:bg-indigo-600">Home</a>
+            </li>
+            <li class="w-full h-full p-2">
+                <a href="REQs.html" class="inline-block w-full h-full font-semibold text-indigo-300 transition duration-100 rounded-lg hover:bg-indigo-600">Requirements</a>
+            </li>
+            <li class="w-full h-full p-2">
+                <a href="FAQ.html" class="inline-block w-full h-full font-semibold text-indigo-300 transition duration-100 rounded-lg hover:bg-indigo-600">FAQ</a>
+            </li>
+            <li class="w-full h-full p-2">
+                <a href="staff.html" class="inline-block w-full h-full font-semibold text-indigo-100 transition duration-100 rounded-lg hover:bg-indigo-600">Staff</a>
+            </li>
+        </ul>
+
     </div>
 
     <div class="py-6 sm:py-8 lg:py-12">
@@ -78,9 +94,9 @@
             </div>
             <!-- text - end -->
 
-            <div class="grid grid-cols-1 gap-4 pb-4 lg:pb-8 md:grid-cols-1 lg:grid-cols-1 lg:gap-8">
+            <div class="grid grid-cols-1 gap-4 pb-4 lg:pb-8 lg:gap-8">
                 <!-- Gigi - start -->
-                <div class="bg-[url('/assets/images/pfps/Gigi/GigiBanner.gif')] bg-[#282828] flex flex-col sm:col-start-2 md:col-start-auto lg:col-start-1 items-center p-4 rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
+                <div class="bg-[url('/assets/images/pfps/Gigi/GigiBanner.gif')] md:hover:scale-110 transition-all ease-in-out duration-300 bg-[#282828] flex flex-col items-center p-4 rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
                     <div class="w-24 h-24 mb-2 overflow-hidden rounded-full shadow-2xl pointer-events-none shadow-black md:w-32 md:h-32 md:mb-4">
                         <img src="/assets/images/pfps/Gigi/GigiPFP.gif" loading="lazy" alt="Gigi's Pfp" class="object-cover object-center w-full h-full" />
                     </div>
@@ -139,7 +155,7 @@
 
             <div class="grid grid-cols-1 gap-4 pb-4 lg:pb-8 md:grid-cols-3 lg:grid-cols-3 lg:gap-8">
                 <!-- Rescore - start -->
-                <div class="bg-[url('/assets/images/pfps/Rescore/RescoreBanner.jpeg')] flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
+                <div class="bg-[url('/assets/images/pfps/Rescore/RescoreBanner.jpeg')] md:hover:scale-110 transition-all ease-in-out duration-300 flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
                     <div class="w-24 h-24 mb-2 overflow-hidden rounded-full shadow-2xl pointer-events-none shadow-black md:w-32 md:h-32 md:mb-4">
                         <img src="/assets/images/pfps/Rescore/RescorePFP.gif" loading="lazy" alt="Rescore's Pfp" class="object-cover object-center w-full h-full" />
                     </div>
@@ -165,7 +181,7 @@
                 <!-- Rescore - end -->
 
                 <!-- Titan - start -->
-                <div class="bg-[url('/assets/images/pfps/Titan/TitanBanner.png')] flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
+                <div class="bg-[url('/assets/images/pfps/Titan/TitanBanner.png')] md:hover:scale-110 transition-all ease-in-out duration-300 flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
                     <div class="w-24 h-24 mb-2 overflow-hidden rounded-full shadow-2xl pointer-events-none shadow-black md:w-32 md:h-32 md:mb-4">
                         <img src="/assets/images/pfps/Titan/TitanPFP.png" loading="lazy" alt="Titan's Pfp" class="object-cover object-center w-full h-full" />
                     </div>
@@ -197,7 +213,7 @@
                 <!-- Titan - end -->
 
                 <!-- Ketchup - start -->
-                <div class="bg-[url('/assets/images/pfps/Ketchup/KetchupBanner.jpeg')] flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
+                <div class="bg-[url('/assets/images/pfps/Ketchup/KetchupBanner.jpeg')] md:hover:scale-110 transition-all ease-in-out duration-300 flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
                     <div class="w-24 h-24 mb-2 overflow-hidden rounded-full shadow-2xl pointer-events-none shadow-black md:w-32 md:h-32 md:mb-4">
                         <img src="/assets/images/pfps/Ketchup/KetchupPFP.png" loading="lazy" alt="Ketchup's Pfp" class="object-cover object-center w-full h-full" />
                     </div>
@@ -239,7 +255,7 @@
 
             <div class="grid grid-cols-1 gap-4 pb-4 lg:pb-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 lg:gap-8">
                 <!-- Ponib - start -->
-                <div class="flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
+                <div class="bg-[url('/assets/images/pfps/Ponib/PonibBanner.jpeg')] md:hover:scale-110 transition-all ease-in-out duration-300 flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
                     <div class="w-24 h-24 mb-2 overflow-hidden rounded-full shadow-2xl pointer-events-none shadow-black md:w-32 md:h-32 md:mb-4">
                         <img src="/assets/images/pfps/Ponib/PonibPFP.png" loading="lazy" alt="Ponib's Pfp" class="object-cover object-center w-full h-full" />
                     </div>
@@ -247,7 +263,7 @@
                     <div>
                         <h2 class="text-4xl font-bold text-center text-indigo-500 md:text-2xl lg:text-4xl">Ponib</h2>
                         <p class="mb-3 text-sm text-center text-slate-300 md:text-xl md:mb-4">Head Moderator</p>
-                        <p class="mb-3 text-sm text-center text-slate-300 md:text-lg md:mb-4">Just dm me your text for here already</p>
+                        <p class="mb-3 text-sm text-center text-slate-300 md:text-lg md:mb-4">I wish you a great day</p>
                         <!-- social - start -->
                         <div class="flex justify-center">
                             <div class="flex gap-4">
@@ -265,7 +281,7 @@
                 <!-- Ponib - end -->
 
                 <!-- T244 - start -->
-                <div class="flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
+                <div class="bg-[url('/assets/images/pfps/T244/T244Banner.gif')] flex flex-col items-center p-4 bg-[#282828] md:hover:scale-110 transition-all ease-in-out duration-300 rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
                     <div class="w-24 h-24 mb-2 overflow-hidden rounded-full shadow-2xl pointer-events-none shadow-black md:w-32 md:h-32 md:mb-4">
                         <img src="/assets/images/pfps/T244/T244PFP.png" loading="lazy" alt="T244's Pfp" class="object-cover object-center w-full h-full" />
                     </div>
@@ -291,7 +307,7 @@
                 <!-- T244 - end -->
 
                 <!-- Unminn - start -->
-                <div class="flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
+                <div class="bg-[url('/assets/images/pfps/Unminn/UnminnBanner.jpeg')] flex flex-col items-center p-4 bg-[#282828] md:hover:scale-110 transition-all ease-in-out duration-300 rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
                     <div class="w-24 h-24 mb-2 overflow-hidden rounded-full shadow-2xl pointer-events-none shadow-black md:w-32 md:h-32 md:mb-4">
                         <img src="/assets/images/pfps/Unminn/UnminnPFP.png" loading="lazy" alt="Unminn's Pfp" class="object-cover object-center w-full h-full" />
                     </div>
@@ -299,7 +315,7 @@
                     <div>
                         <h2 class="text-4xl font-bold text-center text-indigo-500 md:text-2xl lg:text-4xl">Unminn</h2>
                         <p class="mb-3 text-sm text-center text-slate-300 md:text-xl md:mb-4">Moderator</p>
-                        <p class="mb-3 text-sm text-center text-slate-300 md:text-lg md:mb-4">Just dm me your text for here already</p>
+                        <p class="mb-3 text-sm text-center text-slate-300 md:text-lg md:mb-4">I like cheese</p>
                         <!-- social - start -->
                         <div class="flex justify-center">
                             <div class="flex gap-4">
@@ -307,6 +323,12 @@
                                 <a href="https://discord.com/users/235466331753807872" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
                                     <svg class="w-7 h-7" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.076 11c.6 0 1.086.45 1.075 1 0 .55-.474 1-1.075 1C9.486 13 9 12.55 9 12s.475-1 1.076-1zm3.848 0c.601 0 1.076.45 1.076 1s-.475 1-1.076 1c-.59 0-1.075-.45-1.075-1s.474-1 1.075-1zm4.967-9C20.054 2 21 2.966 21 4.163V23l-2.211-1.995-1.245-1.176-1.317-1.25.546 1.943H5.109C3.946 20.522 3 19.556 3 18.359V4.163C3 2.966 3.946 2 5.109 2H18.89zm-3.97 13.713c2.273-.073 3.148-1.596 3.148-1.596 0-3.381-1.482-6.122-1.482-6.122-1.48-1.133-2.89-1.102-2.89-1.102l-.144.168c1.749.546 2.561 1.334 2.561 1.334a8.263 8.263 0 0 0-3.096-1.008 8.527 8.527 0 0 0-2.077.02c-.062 0-.114.011-.175.021-.36.032-1.235.168-2.335.662-.38.178-.607.305-.607.305s.854-.83 2.705-1.376l-.103-.126s-1.409-.031-2.89 1.103c0 0-1.481 2.74-1.481 6.121 0 0 .864 1.522 3.137 1.596 0 0 .38-.472.69-.871-1.307-.4-1.8-1.24-1.8-1.24s.102.074.287.179c.01.01.02.021.041.031.031.022.062.032.093.053.257.147.514.262.75.357.422.168.926.336 1.513.452a7.06 7.06 0 0 0 2.664.01 6.666 6.666 0 0 0 1.491-.451c.36-.137.761-.337 1.183-.62 0 0-.514.861-1.862 1.25.309.399.68.85.68.85z" />
+                                    </svg>
+                                </a>
+                                <!-- Snap Social -->
+                                <a href="https://www.snapchat.com/add/une_persn" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="w-7 h-7" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.871 21.764c-1.19 0-1.984-.561-2.693-1.056-.503-.357-.976-.696-1.533-.79a4.568 4.568 0 0 0-.803-.066c-.472 0-.847.071-1.114.125-.17.03-.312.058-.424.058-.116 0-.263-.032-.32-.228-.05-.16-.081-.312-.112-.459-.08-.37-.147-.597-.286-.62-1.489-.227-2.38-.57-2.554-.976-.014-.044-.031-.09-.031-.125-.01-.125.08-.227.205-.25 1.181-.196 2.242-.824 3.138-1.858.696-.803 1.035-1.579 1.066-1.663 0-.01.009-.01.009-.01.17-.351.205-.65.102-.895-.191-.46-.825-.656-1.257-.79-.111-.03-.205-.066-.285-.093-.37-.147-.986-.46-.905-.892.058-.312.472-.535.811-.535.094 0 .174.014.24.05.38.173.723.262 1.017.262.366 0 .54-.138.584-.182a24.93 24.93 0 0 0-.035-.593c-.09-1.365-.192-3.059.24-4.03 1.298-2.907 4.053-3.14 4.869-3.14L12.156 3h.05c.815 0 3.57.227 4.868 3.139.437.971.33 2.67.24 4.03l-.008.067c-.01.182-.023.356-.032.535.045.035.205.169.535.173.286-.008.598-.102.954-.263a.804.804 0 0 1 .312-.066c.125 0 .25.03.357.066h.009c.299.112.495.321.495.54.009.205-.152.517-.914.825-.08.03-.174.067-.285.093-.424.13-1.057.335-1.258.79-.111.24-.066.548.103.895 0 .01.009.01.009.01.049.124 1.337 3.049 4.204 3.526a.246.246 0 0 1 .205.25c0 .044-.009.089-.031.129-.174.41-1.057.744-2.555.976-.138.022-.205.25-.285.62a6.831 6.831 0 0 1-.112.459c-.044.147-.138.227-.298.227h-.023c-.102 0-.24-.013-.423-.049a5.285 5.285 0 0 0-1.115-.116c-.263 0-.535.023-.802.067-.553.09-1.03.433-1.534.79-.717.49-1.515 1.051-2.697 1.051h-.254z" />
                                     </svg>
                                 </a>
                             </div>
@@ -317,7 +339,7 @@
                 <!-- Unminn - end -->
 
                 <!-- TheWiseBritish - start -->
-                <div class="flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
+                <div class="bg-[url('/assets/images/pfps/TheWiseBritish/TheWiseBritishBanner.png')] md:hover:scale-110 transition-all ease-in-out duration-300 flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
                     <div class="w-24 h-24 mb-2 overflow-hidden rounded-full shadow-2xl pointer-events-none shadow-black md:w-32 md:h-32 md:mb-4">
                         <img src="/assets/images/pfps/TheWiseBritish/TheWiseBritishPFP.png" loading="lazy" alt="TheWiseBritish's Pfp" class="object-cover object-center w-full h-full" />
                     </div>
@@ -325,7 +347,7 @@
                     <div>
                         <h2 class="text-4xl font-bold text-center text-indigo-500 md:text-2xl lg:text-4xl">TheWiseBritish</h2>
                         <p class="mb-3 text-sm text-center text-slate-300 md:text-xl md:mb-4">Administrator</p>
-                        <p class="mb-3 text-sm text-center text-slate-300 md:text-lg md:mb-4">Just dm me your text for here already</p>
+                        <p class="mb-3 text-sm text-center text-slate-300 md:text-lg md:mb-4">I just go along with what's happening</p>
                         <!-- social - start -->
                         <div class="flex justify-center">
                             <div class="flex gap-4">
@@ -346,7 +368,7 @@
 
             <div class="grid grid-cols-1 gap-4 pb-4 lg:pb-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 lg:gap-8">
                 <!-- NiteRix - start -->
-                <div class="bg-[url('/assets/images/pfps/NiteRix/NiteRixBanner.jpeg')] flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
+                <div class="bg-[url('/assets/images/pfps/NiteRix/NiteRixBanner.jpeg')] md:hover:scale-110 transition-all ease-in-out duration-300 flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
                     <div class="w-24 h-24 mb-2 overflow-hidden rounded-full shadow-2xl pointer-events-none shadow-black md:w-32 md:h-32 md:mb-4">
                         <img src="/assets/images/pfps/NiteRix/NiteRixPFP.jpeg" loading="lazy" alt="NiteRix's Pfp" class="object-cover object-center w-full h-full" />
                     </div>
@@ -383,7 +405,7 @@
                 <!-- NiteRix - end -->
 
                 <!-- vlad_bulevard - start -->
-                <div class="bg-[url('/assets/images/pfps/vlad_bulevard/vlad_bulevardBanner.gif')] flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
+                <div class="bg-[url('/assets/images/pfps/vlad_bulevard/vlad_bulevardBanner.gif')] md:hover:scale-110 transition-all ease-in-out duration-300 flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
                     <div class="w-24 h-24 mb-2 overflow-hidden rounded-full shadow-2xl pointer-events-none shadow-black md:w-32 md:h-32 md:mb-4">
                         <img src="/assets/images/pfps/vlad_bulevard/vlad_bulevardPFP.png" loading="lazy" alt="vlad_bulevard's Pfp" class="object-cover object-center w-full h-full" />
                     </div>
@@ -410,7 +432,7 @@
                 <!-- vlad_bulevard - end -->
 
                 <!-- Kuboski - start -->
-                <div class="bg-[url('/assets/images/pfps/Kuboski/KuboskiBanner.gif')] flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
+                <div class="bg-[url('/assets/images/pfps/Kuboski/KuboskiBanner.gif')] md:hover:scale-110 transition-all ease-in-out duration-300 flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
                     <div class="w-24 h-24 mb-2 overflow-hidden rounded-full shadow-2xl pointer-events-none shadow-black md:w-32 md:h-32 md:mb-4">
                         <img src="/assets/images/pfps/Kuboski/KuboskiPFP.png" loading="lazy" alt="Kuboski's Pfp" class="object-cover object-center w-full h-full" />
                     </div>
@@ -436,7 +458,7 @@
                 <!-- Kuboski - end -->
 
                 <!-- Microwave Helicopter - start -->
-                <div class="bg-[url('/assets/images/pfps/Microwave_Helicopter/Microwave_HelicopterBanner.gif')] flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
+                <div class="bg-[url('/assets/images/pfps/Microwave_Helicopter/Microwave_HelicopterBanner.gif')] md:hover:scale-110 transition-all ease-in-out duration-300 flex flex-col items-center p-4 bg-[#282828] rounded-lg lg:p-8 bg-cover bg-no-repeat bg-center shadow-lg">
                     <div class="w-24 h-24 mb-2 overflow-hidden rounded-full shadow-2xl pointer-events-none shadow-black md:w-32 md:h-32 md:mb-4">
                         <img src="/assets/images/pfps/Microwave_Helicopter/Microwave_HelicopterPFP.png" loading="lazy" alt="Microwave Helicopter's Pfp" class="object-cover object-center w-full h-full" />
                     </div>
@@ -459,14 +481,14 @@
                         <!-- social - end -->
                     </div>
                 </div>
-                <!-- MMicrowave Helicopter - end -->
+                <!-- Microwave Helicopter - end -->
             </div>
         </div>
     </div>
 
     <!-- Call To Action -->
     <div class="py-18 sm:py-20 lg:py-24">
-        <div class="px-4 mx-auto max-w-screen-2xl md:px-8">
+        <div class="px-4 mx-auto transition-all duration-300 ease-in-out md:hover:scale-105 max-w-screen-2xl md:px-8 ">
             <div class="flex flex-col overflow-hidden rounded-lg md:h-80 sm:flex-row bg-slate-800">
                 <!-- content - start -->
                 <div class="flex flex-col w-full p-4 sm:w-1/2 lg:w-2/5 sm:p-8">
@@ -475,7 +497,7 @@
                     <p class="max-w-md mb-8 text-xl text-gray-400">Fill out this application form to become a staff member at NLH!</p>
 
                     <div class="mt-auto">
-                        <a href="https://apply.nlh.wtf/" target="_blank" class="inline-block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-indigo-500 rounded-lg outline-none hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 md:text-base">Apply Now!</a>
+                        <a href="https://apply.nlh.wtf/" target="_blank" class="inline-block px-8 py-3 text-sm font-semibold text-center text-white transition-all duration-300 ease-in-out bg-indigo-500 rounded-lg outline-none md:hover:scale-110 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 md:text-base">Apply Now!</a>
                     </div>
                 </div>
                 <!-- content - end -->
@@ -529,7 +551,7 @@
         </footer>
         <!-- Footer - end -->
     </div>
-
+    <script src="/assets/scripts/javascript.js" defer></script>
 </body>
 
 </html>
