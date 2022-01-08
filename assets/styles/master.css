@@ -521,6 +521,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -829,6 +833,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[url\(\'\/assets\/images\/pfps\/Microwave_Helicopter\/Microwave_HelicopterBanner\.gif\'\)\] {
   background-image: url('/assets/images/pfps/Microwave_Helicopter/Microwave_HelicopterBanner.gif');
+}
+
+.bg-\[url\(\'\/assets\/images\/pfps\/Ruby\/RubyBanner\.gif\'\)\] {
+  background-image: url('/assets/images/pfps/Ruby/RubyBanner.gif');
 }
 
 .from-\[\#d979d9\] {
@@ -1498,6 +1506,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:text-6xl {
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 }
