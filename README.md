@@ -8,4 +8,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-No license, the default copyright laws apply, meaning that I retain all rights to my source code and no one may reproduce, distribute, or create derivative works from my work.
+[GNU GPLv3 ](https://choosealicense.com/licenses/gpl-3.0/)
