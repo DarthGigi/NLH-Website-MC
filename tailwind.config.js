@@ -1,8 +1,10 @@
 module.exports = {
-  content: ["*.html", "pages/*.html"],
+  content: ['**/*.html'],
   theme: {
     fontFamily: {
-      'Phospate': ['Phosphate, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif'],
+      Phospate: [
+        'Phosphate, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif',
+      ],
     },
     extend: {},
   },
